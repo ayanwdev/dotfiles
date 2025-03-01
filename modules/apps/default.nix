@@ -6,5 +6,6 @@
     ./misc.nix
     ./gaming.nix
     ./virtualization.nix
+    ./stablepkgs.nix
   ];
 }
