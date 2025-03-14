@@ -5,9 +5,8 @@
     stable-nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
     home-manager.url = "github:nix-community/home-manager";
     hyprland.url = "github:hyprwm/Hyprland";
-    aagl.url = "github:ezKEa/aagl-gtk-on-nix";
     rust-overlay.url = "github:oxalica/rust-overlay";
-    prismlauncher.url = "github:ayanwx/PrismLauncher-Cracked";
+    prismlauncher.url = "github:ayanwdev/PrismLauncher-Cracked";
   };
   outputs =
     {
@@ -16,7 +15,6 @@
       stable-nixpkgs,
       home-manager,
       hyprland,
-      aagl,
       rust-overlay,
       prismlauncher,
     }@inputs:

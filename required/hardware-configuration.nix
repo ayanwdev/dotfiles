@@ -27,32 +27,31 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" = {
-    device = "/dev/disk/by-uuid/0634f0a5-b955-4598-8c28-f6b02548a7c3";
+    device = "/dev/disk/by-uuid/0bc5a429-7ef9-4f0d-bf14-25471d220c39";
     fsType = "ext4";
   };
 
-  fileSystems."/home/ayanw/Media" = {
-    device = "/dev/disk/by-uuid/d5572aba-5a1e-41fe-a6df-b97dfbcc9df1";
-    fsType = "btrfs";
-    options = [
-      "compress=zstd"
-    ];
-  };
-
   fileSystems."/boot" = {
-    device = "/dev/disk/by-uuid/BDFD-F503";
+    device = "/dev/disk/by-uuid/BE98-794F";
     fsType = "vfat";
     options = [
       "fmask=0077"
       "dmask=0077"
+    ];
+  };
 
+  fileSystems."/home/ayanw/Media" = {
+    device = "/dev/disk/by-uuid/BACAA4FFCAA4B8D1";
+    fsType = "ntfs-3g";
+    options = [
+      "rw"
+      "uid=ayanw"
     ];
   };
 
   swapDevices = [
     {
-      device = "/home/ayanw/Media/swapfile";
-      size = 8 * 1024;
+      device = "/dev/disk/by-uuid/4b328725-fe12-49a3-8e8e-4a6958640586";
     }
   ];
 

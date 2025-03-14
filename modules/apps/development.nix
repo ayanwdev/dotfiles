@@ -6,7 +6,6 @@
     clang
     python312
     go
-    bun
     nodejs_23
     yarn-berry
 
@@ -15,23 +14,16 @@
     vscode
     android-studio
     android-tools
-    # postman
-    # sqlitestudio
-    blender-hip
 
     ngrok
     pm2
-
-    # gtk4
 
     gnumake
     cmake
 
     bacon
     nodePackages."nodemon"
-
     nodePackages."prettier"
-    #eas-cli
 
     python312Packages."pip"
 

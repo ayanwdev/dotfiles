@@ -3,16 +3,12 @@
   xdg.portal = {
     enable = true;
     xdgOpenUsePortal = true;
+    wlr.enable = true;
     extraPortals = with pkgs; [
-      xdg-desktop-portal-wlr
       xdg-desktop-portal-gtk
-      #      xdg-desktop-portal-hyprland
+      xdg-desktop-portal-termfilechooser
+
     ];
-    config = {
-      common = {
-        default = "hyprland";
-      };
-    };
   };
 
   environment.systemPackages = [

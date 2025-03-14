@@ -6,14 +6,12 @@
     extraCompatPackages = [ pkgs.proton-ge-bin ];
   };
 
-  programs.anime-game-launcher.enable = true;
   programs.gamemode.enable = true;
 
   environment.systemPackages = with pkgs; [
     jdk21
     inputs.prismlauncher.packages.${pkgs.system}.prismlauncher
-    # jdk8
-    # wl-clicker
-    steam-run
+    # lutris
+    # wine
   ];
 }
