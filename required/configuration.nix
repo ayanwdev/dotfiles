@@ -96,6 +96,7 @@
 
     # filesystems
     ntfs3g
+    btrfs-progs
     compsize
 
     # other essentials

@@ -41,11 +41,10 @@
   };
 
   fileSystems."/home/ayanw/Media" = {
-    device = "/dev/disk/by-uuid/BACAA4FFCAA4B8D1";
-    fsType = "ntfs-3g";
+    device = "/dev/disk/by-uuid/7254ede3-007f-4ccd-b85b-127a8f07d59e";
+    fsType = "btrfs";
     options = [
-      "rw"
-      "uid=ayanw"
+      "compress=zstd"
     ];
   };
 

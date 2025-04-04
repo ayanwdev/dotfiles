@@ -2,19 +2,19 @@
 {
   environment.systemPackages = with pkgs; [
     spotify
-    vlc
+    # vlc
     mpv
-    vpv
-    #pureref
+    # vpv
+    # pureref
     oculante
     amberol
-    #audacity
+    # audacity
 
     playerctl
     imagemagick
     ffmpeg
     obs-studio
-    lutgen
+    # lutgen
 
     spotdl
     gallery-dl

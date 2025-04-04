@@ -11,7 +11,6 @@
   environment.systemPackages = with pkgs; [
     jdk21
     inputs.prismlauncher.packages.${pkgs.system}.prismlauncher
-    # lutris
-    # wine
+    xclicker
   ];
 }

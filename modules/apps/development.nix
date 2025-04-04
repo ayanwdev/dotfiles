@@ -1,4 +1,9 @@
-{ pkgs, inputs, ... }:
+{
+  pkgs,
+  inputs,
+  settings,
+  ...
+}:
 {
   nixpkgs.overlays = [ inputs.rust-overlay.overlays.default ];
   environment.systemPackages = with pkgs; [
@@ -8,6 +13,7 @@
     go
     nodejs_23
     yarn-berry
+    inputs.blender.packages.${settings.system}.blender_4_4
 
     rust-bin.stable.latest.default
 
@@ -16,7 +22,6 @@
     android-tools
 
     ngrok
-    pm2
 
     gnumake
     cmake

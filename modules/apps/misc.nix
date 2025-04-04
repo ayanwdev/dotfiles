@@ -13,5 +13,7 @@
     floorp
     resources
     cloudflare-warp
+    baobab
+    trash-cli
   ];
 }
