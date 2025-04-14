@@ -127,6 +127,14 @@
 
   nixpkgs.config.allowUnfree = true;
   hardware.graphics.enable = true;
-  services.displayManager.ly.enable = true;
+  services = {
+    displayManager.ly.enable = true;
+    udev = {
+      enable = true;
+      packages = [
+        pkgs.via
+      ];
+    };
+  };
   system.stateVersion = "24.05"; # Did you read the comment?
 }

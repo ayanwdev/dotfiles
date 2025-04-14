@@ -1,1 +1,1 @@
-eww open leftbar --config $HOME/dotfiles/modules/home/config/eww/windows/bar --restart
+eww open leftbar --toggle --config $HOME/dotfiles/modules/home/config/eww/windows/bar

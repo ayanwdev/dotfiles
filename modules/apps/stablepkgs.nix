@@ -1,6 +1,6 @@
 { stable-pkgs, ... }:
 {
   environment.systemPackages = [
-    stable-pkgs.nodePackages."eas-cli"
+    # stable-pkgs.nodePackages."eas-cli"
   ];
 }

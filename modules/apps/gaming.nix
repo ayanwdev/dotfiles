@@ -9,8 +9,8 @@
   programs.gamemode.enable = true;
 
   environment.systemPackages = with pkgs; [
-    jdk21
-    inputs.prismlauncher.packages.${pkgs.system}.prismlauncher
-    xclicker
+    # jdk21
+    # inputs.prismlauncher.packages.${pkgs.system}.prismlauncher
+    # xclicker
   ];
 }

@@ -12,6 +12,7 @@
       "$take-ss-area" = "grim -g \"$(slurp -w 0)\" - | swappy -f -";
       "$take-ss-full" = "grim | swappy -f -";
       "$hyprpicker" = "hyprpicker -a";
+      "$toggle_eww" = "sh ~/dotfiles/scripts/launch-eww.sh";
       "exec-once" = [
         "hyprshade on vibrance"
         "systemctl --user start hyprpolkitagent"
@@ -21,7 +22,7 @@
         "[workspace 5 silent] qbittorrent"
         "sh ~/dotfiles/scripts/wallpaper.sh"
         "sh ~/dotfiles/scripts/udev-check.sh"
-        "sh ~/dotfiles/scripts/launch-eww.sh"
+        "$toggle_eww"
       ];
       monitor = "HDMI-A-1,1920x1080@74.97,auto,auto";
       general = {
@@ -88,6 +89,7 @@
         "$mod, J, togglesplit,"
         "$mod SHIFT, S, exec, $take-ss-area"
         "$mod SHIFT, C, exec, $hyprpicker"
+        "$mod SHIFT, B, exec, $toggle_eww"
 
         "$mod, left, movefocus, l"
         "$mod, right, movefocus, r"

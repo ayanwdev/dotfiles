@@ -29,6 +29,7 @@
     bacon
     nodePackages."nodemon"
     nodePackages."prettier"
+    nodePackages."eas-cli"
 
     python312Packages."pip"
 

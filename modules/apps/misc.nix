@@ -15,5 +15,6 @@
     cloudflare-warp
     baobab
     trash-cli
+    chromium
   ];
 }
