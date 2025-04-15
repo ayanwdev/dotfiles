@@ -42,6 +42,7 @@
             ./modules/apps
             ./modules/openssh
             ./modules/systemd
+            ./modules/overlays
 
           ];
 

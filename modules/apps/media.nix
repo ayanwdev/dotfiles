@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    spotify
+    #spotify
     # vlc
     mpv
     # vpv
@@ -9,6 +9,9 @@
     oculante
     amberol
     # audacity
+
+    # (pkgs.callPackage ./spotify-adblock.nix { })
+    spotify
 
     playerctl
     imagemagick
