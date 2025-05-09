@@ -127,6 +127,7 @@
 
   nixpkgs.config.allowUnfree = true;
   hardware.graphics.enable = true;
+  hardware.bluetooth.enable = true;
   services = {
     displayManager.ly.enable = true;
     udev = {

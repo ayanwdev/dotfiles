@@ -16,5 +16,8 @@
     baobab
     trash-cli
     chromium
+    file-roller
+    anki-bin
+    bluetui
   ];
 }

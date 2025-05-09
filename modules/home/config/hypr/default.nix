@@ -7,17 +7,17 @@
       "$mod" = "SUPER";
       "$terminal" = "kitty";
       "$menu" = "rofi -show drun";
+      "$take-ss-area" = "sh ~/dotfiles/scripts/screenshot.sh --area";
+      "$take-ss-full" = "sh ~/dotfiles/scripts/screenshot.sh --full";
       "$cycle_windows" = "hyprctl dispatch cyclenext";
       "$prev_workspace" = "hyprctl dispatch workspace previous";
-      "$take-ss-area" = "grim -g \"$(slurp -w 0)\" - | swappy -f -";
-      "$take-ss-full" = "grim | swappy -f -";
       "$hyprpicker" = "hyprpicker -a";
       "$toggle_eww" = "sh ~/dotfiles/scripts/launch-eww.sh";
       "exec-once" = [
         "hyprshade on vibrance"
         "systemctl --user start hyprpolkitagent"
         "[workspace 1 silent] vesktop"
-        "[workspace 1 silent] steam"
+        "[workspace 1 silent] spotify"
         "[workspace 2 silent] floorp"
         "[workspace 5 silent] qbittorrent"
         "sh ~/dotfiles/scripts/wallpaper.sh"
@@ -64,10 +64,10 @@
       };
       windowrule = [
         "float, class: ^(Emulator)$"
-        "float, class: ^(jetbrains-studio)$"
         "float, class: ^(steam)$"
         "float, class: ^(vesktop)$"
         "float, class: ^(spotify)$"
+        "float, class: ^([Aa]nki)$"
         "float, class: ^(.virt-manager-wrapped)$"
         "float, class: ^(xdg-desktop-portal-gtk)$"
         "float, class: ^(org.gnome.Nautilus)$"
@@ -88,6 +88,7 @@
         "$mod, T, pseudo,"
         "$mod, J, togglesplit,"
         "$mod SHIFT, S, exec, $take-ss-area"
+        "$mod SHIFT, F, exec, $take-ss-full"
         "$mod SHIFT, C, exec, $hyprpicker"
         "$mod SHIFT, B, exec, $toggle_eww"
 
