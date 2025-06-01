@@ -17,7 +17,7 @@
     trash-cli
     chromium
     file-roller
-    anki-bin
     bluetui
+    android-tools
   ];
 }

@@ -19,11 +19,13 @@
 
     rust-bin.stable.latest.default
 
+    obsidian
     vscode
     android-studio
-    android-tools
+    # jetbrains.idea-community
+    postman
 
-    ngrok
+    # ngrok
 
     gnumake
     cmake
@@ -32,7 +34,7 @@
     bacon
     nodePackages."nodemon"
     nodePackages."prettier"
-    nodePackages."eas-cli"
+    # nodePackages."eas-cli"
 
     python312Packages."pip"
 

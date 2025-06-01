@@ -24,7 +24,12 @@
       settings = import ./settings.nix;
       system = settings.system;
       pkgs = nixpkgs.legacyPackages.${system};
-      stable-pkgs = stable-nixpkgs.legacyPackages.${system};
+      stable-pkgs = import stable-nixpkgs {
+        system = settings.system;
+        config = {
+          allowUnfree = true;
+        };
+      };
     in
     {
       nixosConfigurations = {
