@@ -18,8 +18,8 @@
     "xhci_pci"
     "ahci"
     "nvme"
-    "usbhid"
     "usb_storage"
+    "usbhid"
     "sd_mod"
   ];
   boot.initrd.kernelModules = [ ];
@@ -27,12 +27,12 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" = {
-    device = "/dev/disk/by-uuid/0bc5a429-7ef9-4f0d-bf14-25471d220c39";
+    device = "/dev/disk/by-uuid/0c2dd906-3cd2-4c32-9535-1d50f509e945";
     fsType = "ext4";
   };
 
   fileSystems."/boot" = {
-    device = "/dev/disk/by-uuid/BE98-794F";
+    device = "/dev/disk/by-uuid/6247-B785";
     fsType = "vfat";
     options = [
       "fmask=0077"

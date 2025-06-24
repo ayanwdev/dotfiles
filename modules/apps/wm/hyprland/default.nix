@@ -28,9 +28,7 @@
     kitty
     wl-clipboard
     swww
-    dunst
     eww
 
-    nautilus
   ];
 }

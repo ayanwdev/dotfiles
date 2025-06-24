@@ -14,7 +14,7 @@
       "$hyprpicker" = "hyprpicker -a";
       "$toggle_eww" = "sh ~/dotfiles/scripts/launch-eww.sh";
       "exec-once" = [
-        "hyprshade on vibrance"
+        "hyprshade toggle vibrance"
         "systemctl --user start hyprpolkitagent"
         "[workspace 1 silent] vesktop"
         "[workspace 1 silent] spotify"

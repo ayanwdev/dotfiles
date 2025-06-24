@@ -5,7 +5,7 @@ case "$1" in
     grim -g "$(slurp -w 0)" - | swappy -f -
     ;;
   --full)
-    GRIM_DEFAULT_DIR=$HOME/Pictures/Screenshots grim && dunstify "Screenshot taken"
+    GRIM_DEFAULT_DIR=$HOME/Pictures/Screenshots grim && notify-send "Fullscreen screenshot taken"
     ;;
   *)
     echo "Usage: $0 [--area | --full]"

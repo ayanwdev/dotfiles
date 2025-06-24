@@ -31,7 +31,7 @@
   networking = {
     hostName = settings.hostname;
     networkmanager.enable = true;
-    firewall = {
+    firewall = rec {
       enable = true;
       allowedTCPPorts = [
         22
@@ -44,6 +44,7 @@
           to = 9999;
         }
       ];
+      allowedUDPPortRanges = allowedTCPPortRanges;
     };
   };
   time.timeZone = settings.timezone;

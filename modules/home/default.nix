@@ -10,6 +10,7 @@
     ./config/fish
     ./config/kitty
     ./config/micro
+    ./config/swaync
 
     ./files.nix
     ./gtk.nix

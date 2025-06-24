@@ -3,7 +3,7 @@
   username = "ayanw";
   hostname = "nixos";
 
-  gh_username = "ayanwx";
+  gh_username = "ayanwdev";
   gh_email = "ayanxdev@gmail.com";
 
   system = "x86_64-linux";
