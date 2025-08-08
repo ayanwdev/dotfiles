@@ -5,7 +5,7 @@
   ...
 }:
 {
-  nixpkgs.overlays = [ inputs.rust-overlay.overlays.default ];
+  #nixpkgs.overlays = [ inputs.rust-overlay.overlays.default ];
   programs.java.enable = true;
   environment.systemPackages = with pkgs; [
 
@@ -17,7 +17,7 @@
     yarn-berry
     inputs.blender.packages.${settings.system}.blender_4_4
 
-    rust-bin.stable.latest.default
+    #rust-bin.stable.latest.default
 
     obsidian
     vscode

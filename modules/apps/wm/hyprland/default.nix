@@ -3,6 +3,7 @@
   imports = [
     ./fonts.nix
     ./xdg.nix
+    ./hardware.nix
   ];
   programs.hyprland = {
     enable = true;

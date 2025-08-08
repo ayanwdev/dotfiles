@@ -1,7 +1,7 @@
 {
   "extractor": {
     "base-directory": "~/Media/Pictures/gallery-dl/",
-    "sleep": 2,
+    "sleep": 0,
     "pixiv": {
       "archive": "~/Media/Pictures/gallery-dl/Pixiv/archive.sqlite3",
       "filename": "{num}.{extension}",
