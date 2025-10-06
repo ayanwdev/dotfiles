@@ -14,16 +14,17 @@
       "$hyprpicker" = "hyprpicker -a";
       "$toggle_eww" = "sh ~/dotfiles/scripts/launch-eww.sh";
       "exec-once" = [
-        #"hyprshade toggle vibrance"
+        "hyprshade toggle vibrance"
         "systemctl --user start hyprpolkitagent"
+        "sh ~/dotfiles/scripts/wallpaper.sh"
+        "sh ~/dotfiles/scripts/udev-check.sh"
+        "$toggle_eww"
+        "kdeconnectd"
         "[workspace 1 silent] vesktop"
         "[workspace 1 silent] spotify"
         "[workspace 2 silent] firefox-devedition"
         "[workspace 5 silent] qbittorrent"
         "[workspace 5 silent] blueman-manager"
-        "sh ~/dotfiles/scripts/wallpaper.sh"
-        "sh ~/dotfiles/scripts/udev-check.sh"
-        "$toggle_eww"
       ];
       monitor = "HDMI-A-1,1920x1080@74.97,auto,auto";
       general = {

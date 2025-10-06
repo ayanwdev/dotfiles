@@ -25,7 +25,7 @@
     slurp
     swappy
 
-    rofi-wayland
+    rofi
     kitty
     wl-clipboard
     swww

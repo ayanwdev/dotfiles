@@ -15,14 +15,13 @@
     kotlin
     nodejs_24
     yarn-berry
-    inputs.blender.packages.${settings.system}.blender_4_4
-
-    #rust-bin.stable.latest.default
+    # inputs.blender.packages.${settings.system}.blender_4_4
+    # rust-bin.stable.latest.default
 
     obsidian
     vscode
-    android-studio
-    # jetbrains.idea-community
+    krita
+    blender
     postman
 
     # ngrok

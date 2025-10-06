@@ -18,7 +18,7 @@
     # vlc
     mpv
     # vpv
-    # pureref
+    pureref
     oculante
     amberol
     # audacity
