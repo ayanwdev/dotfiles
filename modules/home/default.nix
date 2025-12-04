@@ -20,8 +20,12 @@
     home-manager.enable = true;
     git = {
       enable = true;
-      userName = settings.gh_username;
-      userEmail = settings.gh_email;
+      settings = {
+        user = {
+          name = settings.gh_username;
+          email = settings.gh_email;
+        };
+      };
     };
   };
   home = {

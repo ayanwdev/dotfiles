@@ -1,8 +1,11 @@
-{ inputs, pkgs, ... }:
+{
+  inputs,
+  pkgs,
+  settings,
+  ...
+}:
 {
   imports = [
-    ./fonts.nix
-    ./xdg.nix
     ./hardware.nix
   ];
   programs.hyprland = {
@@ -30,6 +33,8 @@
     wl-clipboard
     swww
     eww
+
+    inputs.ags.packages.${settings.system}.agsFull
 
   ];
 }

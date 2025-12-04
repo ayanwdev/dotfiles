@@ -65,19 +65,19 @@
         disable_hyprland_logo = false;
       };
       windowrule = [
-        "float, class: ^(Emulator)$"
-        "float, class: ^(steam)$"
-        "float, class: ^(vesktop)$"
-        "float, class: ^(spotify)$"
-        "float, class: ^([Aa]nki)$"
-        "float, class: ^(.virt-manager-wrapped)$"
-        "float, class: ^(xdg-desktop-portal-gtk)$"
-        "float, class: ^(org.gnome.Nautilus)$"
-        "float, class: ^(org.gnome.baobab)$"
-        "float, class: ^(moe.launcher.an-anime-game-launcher)$"
-        "float, class: ^(io.bassi.Amberol)$"
-        "float, class: ^(org.prismlauncher.PrismLauncher)$"
-        "float, class: ^(net.nokyan.Resources)$"
+        "float 1, match:class ^(Emulator)$"
+        "float 1, match:class ^(steam)$"
+        "float 1, match:class ^(vesktop)$"
+        "float 1, match:class ^(spotify)$"
+        "float 1, match:class ^([Aa]nki)$"
+        "float 1, match:class ^(.virt-manager-wrapped)$"
+        "float 1, match:class ^(xdg-desktop-portal-gtk)$"
+        "float 1, match:class ^(org.gnome.Nautilus)$"
+        "float 1, match:class ^(org.gnome.baobab)$"
+        "float 1, match:class ^(moe.launcher.an-anime-game-launcher)$"
+        "float 1, match:class ^(io.bassi.Amberol)$"
+        "float 1, match:class ^(org.prismlauncher.PrismLauncher)$"
+        "float 1, match:class ^(net.nokyan.Resources)$"
       ];
       bind = [
         "$mod, RETURN, exec, $terminal"

@@ -44,7 +44,7 @@
     device = "/dev/disk/by-uuid/7254ede3-007f-4ccd-b85b-127a8f07d59e";
     fsType = "btrfs";
     options = [
-      "compress=zstd"
+      "compress=zstd:6"
     ];
   };
 

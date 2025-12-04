@@ -12,7 +12,6 @@
     clang
     python312
     go
-    kotlin
     nodejs_24
     yarn-berry
     # inputs.blender.packages.${settings.system}.blender_4_4
@@ -22,13 +21,13 @@
     vscode
     krita
     blender
-    postman
+    # postman
 
     # ngrok
 
     gnumake
     cmake
-    gradle
+    # gradle
 
     bacon
     nodePackages."nodemon"

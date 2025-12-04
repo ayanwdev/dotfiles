@@ -24,7 +24,6 @@
     gparted
     resources
     cloudflare-warp
-    floorp-bin
     baobab
     trash-cli
     libnotify

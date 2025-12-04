@@ -8,6 +8,9 @@
     rust-overlay.url = "github:oxalica/rust-overlay";
     blender.url = "github:edolstra/nix-warez?dir=blender";
     prismlauncher.url = "github:ayanwdev/PrismLauncher-Cracked";
+    astal.url = "github:aylur/astal";
+    ags.url = "github:aylur/ags";
+    aagl.url = "github:ezKEa/aagl-gtk-on-nix";
   };
   outputs =
     {
@@ -19,6 +22,9 @@
       rust-overlay,
       blender,
       prismlauncher,
+      astal,
+      ags,
+      aagl,
     }@inputs:
     let
       settings = import ./settings.nix;
@@ -36,6 +42,11 @@
 
         ${settings.hostname} = nixpkgs.lib.nixosSystem {
           modules = [
+
+            {
+              imports = [ aagl.nixosModules.default ];
+              nix.settings = aagl.nixConfig;
+            }
 
             # main configruation
             ./required/configuration.nix

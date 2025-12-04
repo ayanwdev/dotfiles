@@ -1,6 +1,6 @@
 {
   imports = [
-    ./wm/hyprland
+    ./environment
     ./development.nix
     ./media.nix
     ./misc.nix
