@@ -1,6 +1,6 @@
 {
 
-  home.file.".config/fish/fish_variables".source = ./fish_variables;
+  #home.file.".config/fish/fish_variables".source = ./fish_variables;
 
   programs.fish = {
     enable = true;

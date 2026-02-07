@@ -8,6 +8,7 @@
 {
   imports = [
     ./hardware-configuration.nix
+    ./graphics.nix
     inputs.home-manager.nixosModules.home-manager
   ];
 
@@ -124,7 +125,9 @@
         ../modules/home
       ];
     };
-    backupFileExtension = "backup";
+    backupFileExtension =
+      "backup-"
+      + pkgs.lib.readFile "${pkgs.runCommand "timestamp" { } "echo -n `date '+%Y%m%d%H%M%S'` > $out"}";
   };
 
   nixpkgs.config.allowUnfree = true;

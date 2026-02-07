@@ -5,12 +5,12 @@
     stable-nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
     home-manager.url = "github:nix-community/home-manager";
     hyprland.url = "github:hyprwm/Hyprland";
-    rust-overlay.url = "github:oxalica/rust-overlay";
-    blender.url = "github:edolstra/nix-warez?dir=blender";
+    # rust-overlay.url = "github:oxalica/rust-overlay";
+    # blender.url = "github:edolstra/nix-warez?dir=blender";
     prismlauncher.url = "github:ayanwdev/PrismLauncher-Cracked";
     astal.url = "github:aylur/astal";
     ags.url = "github:aylur/ags";
-    aagl.url = "github:ezKEa/aagl-gtk-on-nix";
+    # aagl.url = "github:ezKEa/aagl-gtk-on-nix";
   };
   outputs =
     {
@@ -19,12 +19,9 @@
       stable-nixpkgs,
       home-manager,
       hyprland,
-      rust-overlay,
-      blender,
       prismlauncher,
       astal,
       ags,
-      aagl,
     }@inputs:
     let
       settings = import ./settings.nix;
@@ -42,11 +39,6 @@
 
         ${settings.hostname} = nixpkgs.lib.nixosSystem {
           modules = [
-
-            {
-              imports = [ aagl.nixosModules.default ];
-              nix.settings = aagl.nixConfig;
-            }
 
             # main configruation
             ./required/configuration.nix

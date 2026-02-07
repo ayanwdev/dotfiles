@@ -7,10 +7,9 @@
   };
 
   programs.gamemode.enable = true;
-  programs.anime-game-launcher.enable = true;
 
   environment.systemPackages = with pkgs; [
-    inputs.prismlauncher.packages.${pkgs.system}.prismlauncher
+    #inputs.prismlauncher.packages.${pkgs.system}.prismlauncher
     xclicker
   ];
 }

@@ -3,7 +3,7 @@
 
   environment.systemPackages = with pkgs; [
     mpv
-    pureref
+    # pureref
     oculante
     amberol
 

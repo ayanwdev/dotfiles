@@ -5,29 +5,23 @@
   ...
 }:
 {
-  #nixpkgs.overlays = [ inputs.rust-overlay.overlays.default ];
   programs.java.enable = true;
   environment.systemPackages = with pkgs; [
 
     clang
     python312
-    go
+    # go
     nodejs_24
     yarn-berry
     # inputs.blender.packages.${settings.system}.blender_4_4
     # rust-bin.stable.latest.default
 
-    obsidian
     vscode
+    waydroid
     krita
-    blender
-    # postman
-
-    # ngrok
 
     gnumake
     cmake
-    # gradle
 
     bacon
     nodePackages."nodemon"
