@@ -31,7 +31,5 @@
     swww
     eww
 
-    inputs.ags.packages.${settings.system}.agsFull
-
   ];
 }

@@ -10,9 +10,12 @@
       enable = true;
       package = inputs.hyprland.inputs.nixpkgs.legacyPackages.${pkgs.stdenv.hostPlatform.system}.mesa;
       extraPackages = with pkgs; [
-        vpl-gpu-rt
+        intel-media-driver
         intel-compute-runtime
-        level-zero
+        vpl-gpu-rt
+        libvdpau-va-gl
+        #
+        clinfo
       ];
     };
   };

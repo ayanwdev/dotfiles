@@ -7,9 +7,9 @@
     hyprland.url = "github:hyprwm/Hyprland";
     # rust-overlay.url = "github:oxalica/rust-overlay";
     # blender.url = "github:edolstra/nix-warez?dir=blender";
-    prismlauncher.url = "github:ayanwdev/PrismLauncher-Cracked";
-    astal.url = "github:aylur/astal";
-    ags.url = "github:aylur/ags";
+    # prismlauncher.url = "github:ayanwdev/PrismLauncher-Cracked";
+    # astal.url = "github:aylur/astal";
+    # ags.url = "github:aylur/ags";
     # aagl.url = "github:ezKEa/aagl-gtk-on-nix";
   };
   outputs =
@@ -19,9 +19,9 @@
       stable-nixpkgs,
       home-manager,
       hyprland,
-      prismlauncher,
-      astal,
-      ags,
+      # prismlauncher,
+      # astal,
+      # ags,
     }@inputs:
     let
       settings = import ./settings.nix;

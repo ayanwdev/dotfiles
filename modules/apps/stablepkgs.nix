@@ -1,5 +1,6 @@
 { stable-pkgs, ... }:
 {
   environment.systemPackages = with stable-pkgs; [
+    neofetch
   ];
 }

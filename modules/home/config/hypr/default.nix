@@ -14,7 +14,7 @@
       "$hyprpicker" = "hyprpicker -a";
       "$toggle_eww" = "sh ~/dotfiles/scripts/launch-eww.sh";
       "exec-once" = [
-        #"hyprshade toggle vibrance"
+        "hyprshade toggle vibrance"
         "systemctl --user start hyprpolkitagent"
         "sh ~/dotfiles/scripts/wallpaper.sh"
         "sh ~/dotfiles/scripts/udev-check.sh"
@@ -24,8 +24,9 @@
         "[workspace 1 silent] vesktop"
         "[workspace 1 silent] spotify"
         "[workspace 2 silent] firefox-devedition"
-        "[workspace 5 silent] qbittorrent"
-        "[workspace 5 silent] blueman-manager"
+        "[workspace 5 silent] android-studio"
+        # "[workspace 5 silent] qbittorrent"
+        # "[workspace 5 silent] blueman-manager"
       ];
       monitor = "DP-1,1920x1080@74.97,auto,auto";
       general = {
@@ -41,6 +42,9 @@
       workspace = [
         "1, monitor:HDMI-A-1, default:true"
       ];
+      cursor = {
+        no_hardware_cursors = true;
+      };
       decoration = {
         rounding = 0;
         active_opacity = 1.0;
@@ -89,7 +93,6 @@
         "$mod, C, exec, $cycle_windows"
         "$mod, TAB, exec, $prev_workspace"
         "$mod, T, pseudo,"
-        "$mod, J, togglesplit,"
         "$mod SHIFT, S, exec, $take-ss-area"
         "$mod SHIFT, F, exec, $take-ss-full"
         "$mod SHIFT, C, exec, $hyprpicker"

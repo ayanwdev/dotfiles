@@ -27,7 +27,7 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" = {
-    device = "/dev/disk/by-uuid/bbc611c8-ca8d-4336-a1af-3d8f497c5a7d";
+    device = "/dev/disk/by-uuid/1556c215-ae31-4487-8dde-a2a220e74286";
     fsType = "ext4";
   };
 
@@ -42,7 +42,7 @@
 
   fileSystems."/home/ayanw/Media" = {
     device = "/dev/disk/by-uuid/701F9C0E3C1F1135";
-    fsType = "ntfs";
+    fsType = "ntfs-3g";
     options = [
       "rw"
       "nofail"
@@ -53,7 +53,12 @@
     ];
   };
 
-  swapDevices = [ ];
+  swapDevices = [
+    {
+      device = "/var/lib/swapfile";
+      size = 4 * 1024;
+    }
+  ];
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;

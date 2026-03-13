@@ -92,7 +92,7 @@
     wget
 
     # nix-language essentials
-    nixfmt-rfc-style
+    nixfmt
     nil
     nh
     direnv
@@ -103,7 +103,7 @@
     compsize
 
     # other essentials
-    neofetch # most important
+    # neofetch # most important
     eza # better ls
     bat # better cat
     micro # text editor

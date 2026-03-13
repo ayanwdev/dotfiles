@@ -23,13 +23,10 @@
     motrix
     gparted
     resources
-    cloudflare-warp
     baobab
     trash-cli
     libnotify
-    chromium
     file-roller
-    bluetui
     nautilus
     android-tools
   ];
