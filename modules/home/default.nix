@@ -35,7 +35,8 @@
       XDG_CONFIG_HOME = "$HOME/.config";
       XDG_CACHE_HOME = "$HOME/.cache";
       XDG_BIN_HOME = "$HOME/dotfiles/scripts/bin";
-      ANDROID_HOME = "$HOME/Android/Sdk";
+      ANDROID_HOME = "$HOME/Media/Android";
+      EDGE_PATH = "${pkgs.ungoogled-chromium}/bin/chromium";
       NIXPKGS_ALLOW_UNFREE = 1;
       NIXOS_OZONE_WL = 1;
       GTK_THEME = "Tokyonight-Dark";

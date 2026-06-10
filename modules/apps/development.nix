@@ -2,6 +2,7 @@
   pkgs,
   inputs,
   settings,
+  lib,
   ...
 }:
 {
@@ -9,17 +10,21 @@
 
   environment.systemPackages = with pkgs; [
 
+    codex
+    llama-cpp-vulkan
+
     clang
-    python315
+    python314
     nodejs_24
+    javaPackages.compiler.openjdk21
+
     yarn-berry
 
     vscode
-    android-studio
 
-    nodePackages."nodemon"
-    nodePackages."prettier"
-    nodePackages."eas-cli"
+    nodemon
+    prettier
+    eas-cli
 
     tokei
   ];

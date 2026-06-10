@@ -85,6 +85,7 @@
   };
 
   environment.systemPackages = with pkgs; [
+    inputs.neofetch.packages.${pkgs.system}.neofetch # most important
     gh # github cli
     killall
     gdu # graphical du
@@ -113,6 +114,9 @@
     tmux
     p7zip
     fzf
+
+    clinfo
+    nvtopPackages.intel
   ];
 
   home-manager = {
@@ -135,12 +139,12 @@
 
   services = {
     displayManager.ly.enable = true;
-    udev = {
-      enable = true;
-      packages = [
-        pkgs.via
-      ];
-    };
+    # udev = {
+    #   enable = true;
+    #   packages = [
+    #     pkgs.via
+    #   ];
+    # };
   };
   system.stateVersion = "24.05"; # Did you read the comment?
 }

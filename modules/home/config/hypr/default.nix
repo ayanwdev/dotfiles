@@ -14,19 +14,18 @@
       "$hyprpicker" = "hyprpicker -a";
       "$toggle_eww" = "sh ~/dotfiles/scripts/launch-eww.sh";
       "exec-once" = [
+        "$toggle_eww"
+        "hyprpaper"
+        "kdeconnectd"
         "hyprshade toggle vibrance"
         "systemctl --user start hyprpolkitagent"
-        "sh ~/dotfiles/scripts/wallpaper.sh"
+        "swaybg -i ~/dotfiles/assets/wallpapers/tokyonight-0.jpg"
         "sh ~/dotfiles/scripts/udev-check.sh"
         "rm ~/.config/fish/fish_variables"
-        "$toggle_eww"
-        "kdeconnectd"
         "[workspace 1 silent] vesktop"
         "[workspace 1 silent] spotify"
         "[workspace 2 silent] firefox-devedition"
-        "[workspace 5 silent] android-studio"
-        # "[workspace 5 silent] qbittorrent"
-        # "[workspace 5 silent] blueman-manager"
+        "[workspace 5 silent] qbittorrent"
       ];
       monitor = "DP-1,1920x1080@74.97,auto,auto";
       general = {
@@ -61,7 +60,6 @@
         ];
       };
       dwindle = {
-        pseudotile = true;
         preserve_split = true;
         force_split = 2;
       };
@@ -73,7 +71,7 @@
         "float 1, match:class ^(Emulator)$"
         "float 1, match:class ^(steam)$"
         "float 1, match:class ^(vesktop)$"
-        "float 1, match:class ^(spotify)$"
+        "float 1, match:class ^([Ss]potify)$"
         "float 1, match:class ^([Aa]nki)$"
         "float 1, match:class ^(.virt-manager-wrapped)$"
         "float 1, match:class ^(xdg-desktop-portal-gtk)$"

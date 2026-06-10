@@ -49,7 +49,6 @@
       "uid=1000"
       "gid=100"
       "umask=022"
-      "windows_names"
     ];
   };
 

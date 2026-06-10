@@ -28,8 +28,8 @@
     rofi
     kitty
     wl-clipboard
-    swww
     eww
+    swaybg
 
   ];
 }

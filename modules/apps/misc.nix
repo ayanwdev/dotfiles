@@ -6,7 +6,10 @@
 }:
 {
 
-  services.blueman.enable = true;
+  services = {
+    blueman.enable = true;
+  };
+
   programs = {
     firefox = {
       enable = true;
@@ -18,6 +21,7 @@
   };
 
   environment.systemPackages = with pkgs; [
+    ungoogled-chromium
     vesktop
     qbittorrent
     motrix
@@ -29,5 +33,6 @@
     file-roller
     nautilus
     android-tools
+    gping
   ];
 }
