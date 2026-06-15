@@ -34,5 +34,7 @@
     nautilus
     android-tools
     gping
+    glow
+    cloudflare-warp
   ];
 }
