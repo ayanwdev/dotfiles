@@ -3,18 +3,17 @@
 
   environment.systemPackages = with pkgs; [
     mpv
-    # pureref
-    oculante
-    amberol
+    anime4k
 
     spotify
+    oculante
+    amberol
 
     playerctl
     imagemagick
     ffmpeg
     obs-studio
 
-    spotdl
     gallery-dl
     yt-dlp
   ];

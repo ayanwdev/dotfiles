@@ -71,7 +71,7 @@
 
 (defwidget desktop_switcher [desktop]
   (eventbox
-    :onclick "hyprctl dispatch workspace ${desktop}"
+    :onclick "hyprctl dispatch 'hl.dsp.focus({ workspace = ${desktop} })'"
     :cursor  "pointer"
     :halign  "center"
     (label

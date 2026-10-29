@@ -36,5 +36,7 @@
     gping
     glow
     cloudflare-warp
+    rclone
+    markitdown
   ];
 }

@@ -52,6 +52,16 @@
     ];
   };
 
+  fileSystems."/home/ayanw/Media/SteamLibrary/steamapps/compatdata" = {
+    device = "/home/ayanw/.local/share/compatdata";
+    fsType = "none";
+    options = [
+      "bind"
+      "nofail"
+      "x-systemd.requires-mounts-for=/home/ayanw/Media"
+    ];
+  };
+
   swapDevices = [
     {
       device = "/var/lib/swapfile";

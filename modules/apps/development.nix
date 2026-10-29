@@ -8,9 +8,14 @@
 {
   programs.java.enable = true;
 
+  virtualisation.docker = {
+    enable = true;
+  };
+
   environment.systemPackages = with pkgs; [
 
-    codex
+    obsidian
+
     llama-cpp-vulkan
 
     clang
@@ -19,13 +24,21 @@
     javaPackages.compiler.openjdk21
 
     yarn-berry
+    bun
 
     vscode
 
+    antigravity-cli
+    agent-browser
+    opencode
+
     nodemon
     prettier
+
     eas-cli
+    firebase-tools
 
     tokei
+
   ];
 }

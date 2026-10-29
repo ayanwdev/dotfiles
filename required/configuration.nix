@@ -67,6 +67,7 @@
         "libvirtd"
         "kvm"
         "input"
+        "docker"
       ];
       shell = pkgs.fish;
     };
